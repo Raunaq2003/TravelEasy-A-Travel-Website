@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<title>Top Destinations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+.weather-info {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+</style>
+<body background="bgc.jpg">
+
+<h2 class="w3-center"><b>Top Destinations</b></h2>
+
+<div class="w3-content w3-section">
+  <div class="mySlides">
+    <img src="dubai.jpg" style="width:100%">
+    <div id="dubai-weather" class="weather-info"></div>
+  </div>
+  <div class="mySlides">
+    <img src="hongkong.jpg" style="width:100%">
+    <div id="hongkong-weather" class="weather-info"></div>
+  </div>
+  <div class="mySlides">
+    <img src="singaporetr.jpg" style="width:100%">
+    <div id="singapore-weather" class="weather-info"></div>
+  </div>
+  <div class="mySlides">
+    <img src="greece.jpg" style="width:100%">
+    <div id="greece-weather" class="weather-info"></div>
+  </div>
+  <div class="mySlides">
+    <img src="newyork.jpg" style="width:100%">
+    <div id="newyork-weather" class="weather-info"></div>
+  </div>
+  <div class="mySlides">
+    <img src="london.jpg" style="width:100%">
+    <div id="london-weather" class="weather-info"></div>
+  </div>
+  <div class="mySlides">
+    <img src="paris.jpg" style="width:100%">
+    <div id="paris-weather" class="weather-info"></div>
+  </div>
+  <div class="mySlides">
+    <img src="thailand.jpg" style="width:100%">
+    <div id="thailand-weather" class="weather-info"></div>
+  </div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var locations = ["Dubai", "Hong Kong", "Singapore", "Greece", "New York", "London", "Paris", "Thailand"];
+  var weatherDivs = [
+    document.getElementById("dubai-weather"),
+    document.getElementById("hongkong-weather"),
+    document.getElementById("singapore-weather"),
+    document.getElementById("greece-weather"),
+    document.getElementById("newyork-weather"),
+    document.getElementById("london-weather"),
+    document.getElementById("paris-weather"),
+    document.getElementById("thailand-weather")
+  ];
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) { myIndex = 1; }
+  x[myIndex - 1].style.display = "block";
+
+  var location = locations[myIndex - 1];
+  var weatherDiv = weatherDivs[myIndex - 1];
+  getWeather(location, weatherDiv);
+
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+function getWeather(location, weatherDiv) {
+  const apiKey = "50b0ca01775dc5815feff32bace79d99";
+  const city = encodeURIComponent(location);
+
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+    .then(response => response.json())
+    .then(data => {
+      var temp = data.main.temp;
+      var description = data.weather[0].description;
+      weatherDiv.innerHTML = location + ": " + temp + "°C, " + description;
+    })
+    .catch(error => {
+      console.log("Error retrieving weather data:", error);
+      weatherDiv.innerHTML = "Error retrieving weather data";
+    });
+}
+</script>
+
+</body>
+</html>

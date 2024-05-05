@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+</style>
+</head>
+<body background= "wood.jpg">
+
+<h1><b>Hotel Recommendations</b></h1>
+<h2><b><em>(The hotels we suggest have been personally visited and approved by our staff)</em></b></h2>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Italy')" id="defaultOpen">Italy</button>
+  <button class="tablinks" onclick="openCity(event, 'USA')">USA</button>
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Mauritius')">Mauritius</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Singapore')">Singapore</button>
+  <button class="tablinks" onclick="openCity(event, 'Hong Kong')">Hong Kong</button>
+  <button class="tablinks" onclick="openCity(event, 'Bali')">Bali</button>
+  <button class="tablinks" onclick="openCity(event, 'Dubai')">Dubai</button>
+  <button class="tablinks" onclick="openCity(event, 'Istanbul')">Istanbul</button>
+  <button class="tablinks" onclick="openCity(event, 'Greece')">Greece</button>
+  <button class="tablinks" onclick="openCity(event, 'Malaysia')">Malaysia</button>
+  <button class="tablinks" onclick="openCity(event, 'Maldives')">Maldives</button>
+  <button class="tablinks" onclick="openCity(event, 'Australia')">Australia</button>
+  <button class="tablinks" onclick="openCity(event, 'Africa')">Africa</button>
+  <button class="tablinks" onclick="openCity(event, 'China')">China</button>
+  <button class="tablinks" onclick="openCity(event, 'Switzerland')">Switzerland</button>
+  <button class="tablinks" onclick="openCity(event, 'Thailand')">Thailand</button>
+  <button class="tablinks" onclick="openCity(event, 'Prague')">Prague</button>
+  <button class="tablinks" onclick="openCity(event, 'Spain')">Spain</button>
+</div>
+
+<div id="Mauritius" class="tabcontent">
+  <h1>Top Hotels in Mauritius</h1>
+    <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="maurha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Labourdonnais Waterfront Hotel</b> </h4>
+        <p class="card-text"><b>Price: Rs.13,377</b><br/>
+     <b> 5 Star Hotel.</b></p>
+     <p><em>Waterfront Hotel with spa, near Caudan Waterfront.Provides facilities such as  outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="maurhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Ravenala Attitude</b> </h4>
+        <p class="card-text"><b>Price: Rs.8,961</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>Upscale beachfront resort with spa, near turtle bay marine park.It has over 10 restaurants and 4 bars and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi. </em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="maurhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Le Suffren Hotel </b> </h4>
+        <p class="card-text"><b>Price: Rs.11,084</b><br/>
+     <p><b>4 Star Hotel</b></p>
+      <p><em>Beach hotel with spa near Caudan Waterfront , has a private beach, casino, restaurant, 3 bars , outdoor pool, spas and breakfast.</em></p>
+
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="maurhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Maritiim Resort And Spa</b> </h4>
+        <p class="card-text"><b>Price: Rs.10,734</b><br/>
+     <b> 5 Star Hotel</b></p>
+     <p><em>Beachfront resort in Balaclava with golf course, spa, 6 restaurants, 2 bars, spa and outdoor pool.</em></p>
+      </div>
+    </div>
+    </div>
+
+
+</div>
+
+<div id="USA" class="tabcontent">
+  <h1>Top Hotels in USA</h1>
+   <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="usha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Grand Hyatt New York</b> </h4>
+        <p class="card-text"><b>Price: Rs.17,480</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with restaurants, near Chrysler Building . Has 24-hr fitness center,spa services and coffee shops.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="ushb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Belvedere Hotel, New York</b> </h4>
+        <p class="card-text"><b>Price: Rs.12,081</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>Artdeco hotel with restaurant near broadway.Has 24-hr fitness center,spa services and coffee shops.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="ushc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Handlery Union Square Hotel, San Francisco</b> </h4>
+        <p class="card-text"><b>Price: Rs.19,580</b><br/>
+      <p><b>3.5 Star Hotel</b></p>
+     <p><em>Family Hotel with outdoor pool, near Westfield San Francisco center and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi. </em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="ushd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Lincoln,Chicago</b> </h4>
+        <p class="card-text"><b>Price: Rs.11,591</b><br/>
+     <p><b>4 star hotel</b></p>
+     <p><em>Lakefront hotel with 2 restaurants near Chicago History Museum and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    </div>
+ 
+</div>
+
+<div id="London" class="tabcontent">
+  <h1>Top Hotels in London</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="lonha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Marlin Waterloo,London</b> </h4>
+        <p class="card-text"><b>Price: Rs.12,079</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star aparthotel with bar/lounge , near London Dungeon and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi .</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="lonhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Heathrow/Windsor Mariott Hotel</b> </h4>
+        <p class="card-text"><b>Price: Rs.9,701</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel in slough with indoor pool, bar/lounge, 3 restaurants , terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="lonhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Radisson Blu Edwardian Hampshire Hotel</b> </h4>
+        <p class="card-text"><b>Price: Rs.25,117</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>Luxury Hotel with 2 restaurants near Wyndham's Theatre and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="lonhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Phoenix Hotel, London</b> </h4>
+        <p class="card-text"><b>Price Rs.9,410</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em>Victorian Hotel with bar/lounge, near natural history museum and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="Italy" class="tabcontent">
+  <h1>Top Hotels in Italy</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="italha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Royal San Marco Hotel,Venice</b> </h4>
+        <p class="card-text"><b>Price: Rs.5,282</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with restaurant near St Mark's Basilica and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi .</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="italhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Cavaletto e Doge Orselo,Venice</b> </h4>
+        <p class="card-text"><b>Price: Rs.9,557</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with bar/lounge  , terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near St Mark's Square.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="italhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Cavour, Milan</b> </h4>
+        <p class="card-text"><b>Price: Rs.12,887</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with restaurant near Pinacoteca di Brera  and provides facilities like outdoor pool,  breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="italhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>DoubleTree By Hilton,Milan</b> </h4>
+        <p class="card-text"><b>Price Rs 8,541</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with restaurant, near Fiera Milano City and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="Paris" class="tabcontent">
+  <h1>Top Hotels in Paris</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="parha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hyatt Regency Paris,Charles de Gaulle</b> </h4>
+        <p class="card-text"><b>Price: Rs.12,991</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em> A Suburbarn Hotel in Roissy-en-France and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi .</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="parhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Victoire And Germain </b> </h4>
+        <p class="card-text"><b>Price: Rs.19,020</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with bar/lounge  , terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Luxembourg Gardens.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="parhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Trianon Rive Gauche</b> </h4>
+        <p class="card-text"><b>Price: Rs.13,953</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A City center hotel with restaurant near Pinacoteca di Brera  and provides facilities like outdoor pool,  breakfast, health club , in-room childcare, 24-hr front desk and free wifi ,near Sorbonne University.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="parhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Left Bank Saint Germain,Paris, France</b> </h4>
+        <p class="card-text"><b>Price Rs 12,920</b><br/>
+     <p><b>3 Star Hotel</b></p>
+     <p><em> A City Center hotel within easy reach of Sainte Chapelle and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="Singapore" class="tabcontent">
+  <h1>Top Hotels in Singapore</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="singha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Carlton Hotel Singapore</b> </h4>
+        <p class="card-text"><b>Price: Rs.10,824</b><br/>
+     <p><b>4.5 Star Hotel</b></p>
+     <p><em>A luxury hotel with 4 restaurants near Cathedral of the Good Shepherd and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi .</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="singhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Fort Canning </b> </h4>
+        <p class="card-text"><b>Price: Rs.13,392</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A luxury hotel with bar/lounge  , terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near National Museum of Singapore..</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="singhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Regent Singapore, A Four Seasons Hotel</b> </h4>
+        <p class="card-text"><b>Price: Rs.18,074</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A luxury hotel with restaurant near Orchid garden  and provides facilities like outdoor pool,  breakfast, health club , in-room childcare, 24-hr front desk and free wifi ,near Sorbonne University.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="singhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Orchard Hotel ,Singapore </b> </h4>
+        <p class="card-text"><b>Price Rs 10,784</b><br/>
+     <p><b>4.5 Star Hotel</b></p>
+     <p><em> A luxury hotel near National Orchid Garden and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="Hong Kong" class="tabcontent">
+  <h1>Top Hotels in Hong Kong</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="hongha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Burlington Hotel,Hong Kong</b> </h4>
+        <p class="card-text"><b>Price: Rs.10,396</b><br/>
+     <p><b>3.5 Star Hotel</b></p>
+     <p><em>A city center hotel within walking distance of Hong Kong Academy of performing Arts  and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi .</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="honghb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Harbour Plaza Metropolis </b> </h4>
+        <p class="card-text"><b>Price: Rs.8,102</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star  hotel with spa , terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Hong Kong Coliseum.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="honghc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Kowloon Shangri-la , Hong Kong</b> </h4>
+        <p class="card-text"><b>Price: Rs.19,064</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A luxury hotel  near Tsim Sha Sui Promenade and provides facilities like outdoor pool,  breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="honghd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Intercontinental Grand Stanford, Hong Kong</b> </h4>
+        <p class="card-text"><b>Price Rs 13,377</b><br/>
+     <p><b>4.5 Star Hotel</b></p>
+     <p><em> A luxury hotel near Nathan Road Shopping Dsitrict and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="Bali" class="tabcontent">
+  <h1>Top Hotels in Bali</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="baliha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Laguna, Nusa Dua, Bali</b> </h4>
+        <p class="card-text"><b>Price: Rs.12,754</b><br/>
+     <p><b>3.5 Star Hotel</b></p>
+     <p><em>A 5 star beachfront hotel near Nusa Dua Beach  and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi .</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="balihb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hilton Garden Inn Bali Nagura Rai Airport, Tuban ,Indonesia </b> </h4>
+        <p class="card-text"><b>Price: Rs.4,459</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star  hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Tuban Beach .</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="balihc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Plantaran Ubud Hotel & Spa </b> </h4>
+        <p class="card-text"><b>Price: Rs.8,006</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A luxury resort  near Ubud Monkey Foresr and provides facilities like outdoor pool,  breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="balihd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Lokha ,Ubud </b> </h4>
+        <p class="card-text"><b>Price Rs 6,018</b><br/>
+     <p><b>4.5 Star Hotel</b></p>
+     <p><em> A luxury hotel in Sambahan and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="Dubai" class="tabcontent">
+  <h1>Top Hotels in Dubai</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="dubha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Jumeirah Emirates Towers, Duabi, UAE</b> </h4>
+        <p class="card-text"><b>Price: Rs.9,722</b><br/> 
+     <p><b>5 Star Hotel</b></p>
+     <p><em>An upscale beach hotel  and provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Dubai International Financial Center .</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="dubhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Radisson Blu Hotel Dubai Waterfront</b> </h4>
+        <p class="card-text"><b>Price: Rs.6,500</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A waterfront  hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Burj Khalifa .</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="dubhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Jumeirah Creekside Hotel </b> </h4>
+        <p class="card-text"><b>Price: Rs.7,986</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>An upscale beach hotel with free water park and provides facilities like outdoor pool,breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Dubai Tennis Stadium.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="dubhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Taj,Dubai </b> </h4>
+        <p class="card-text"><b>Price Rs 9,259</b><br/>
+     <p><b>5 Star Hotel</b></p>
+     <p><em> A luxury hotel that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Burj Khalifa.</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="Istanbul" class="tabcontent">
+  <h1>Top Hotels in Istanbul</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="istanha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Arden City Hotel </b> </h4>
+        <p class="card-text"><b>Price: Rs.6,084</b><br/> 
+     <p><b>4.5 Star Hotel</b></p>
+     <p><em>A luxury hotel that provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Basilica Cistern .</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="istanhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hilton Istanbul Bomonti Hotel</b> </h4>
+        <p class="card-text"><b>Price: Rs.9,328</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Istanbul Cevahir Shopping and entertainment centre .</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="istanhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Ottoman Hotel Imperial </b> </h4>
+        <p class="card-text"><b>Price: Rs.6,050</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel  that provides facilities like outdoor pool,breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Basilica Cistern.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="istanhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Derasaadet Hotel</b> </h4>
+        <p class="card-text"><b>Price:Rs 5,685</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em> A 4 star hotel that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Blue Mosque.</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="Greece" class="tabcontent">
+  <h1>Top Hotels in Greece</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="greeha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Arion Hotel,Athens </b> </h4>
+        <p class="card-text"><b>Price: Rs.8,695</b><br/> 
+     <p><b>3 Star Hotel</b></p>
+     <p><em>A family hotel that provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Ancient Agora .</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="greehb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Electra Metropolis Athens</b> </h4>
+        <p class="card-text"><b>Price: Rs.19,519</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Heilinic, Parliament .</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="greehc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Terra Maltese Natural Retreat,Mykonos, Greece </b> </h4>
+        <p class="card-text"><b>Price: Rs.9,176</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel in Mykonos that provides facilities like outdoor pool,breakfast, health club , in-room childcare, 24-hr front desk.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="greehd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Ira Hotel And Spa,Santorini</b> </h4>
+        <p class="card-text"><b>Price:Rs 11,130</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em> A 4 star hotel that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Archaeological Museum .</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="Malaysia" class="tabcontent">
+  <h1>Top Hotels in Malaysia</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="malayha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Pullman Kuala Lumpur City Centre Hotel</b> </h4>
+        <p class="card-text"><b>Price: Rs.5,650</b><br/> 
+     <p><b>5 Star Hotel</b></p>
+     <p><em>A Luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Pavillion Kuala Lumpur.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="malayhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Melia Kuala Lumpur</b> </h4>
+        <p class="card-text"><b>Price: Rs.5,223</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A4 star hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Petaling Street.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="malayhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Dash Resort ,Langkawi</b> </h4>
+        <p class="card-text"><b>Price: Rs.6,486</b><br/>
+      <p><b>3.5 Star Hotel</b></p>
+     <p><em>A 3.5 star hotel in Mykonos that provides facilities like outdoor pool,breakfast, health club , in-room childcare, 24-hr front desk near Underwater world.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="malayhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Frangipani Langkawi Resort And Spa</b> </h4>
+        <p class="card-text"><b>Price:Rs 6,502</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em> A beachfront hotel that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi . .</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="Maldives" class="tabcontent">
+  <h1>Top Hotels in Maldives</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="malha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Maagiri Hotel, Male,Maldives </b> </h4>
+        <p class="card-text"><b>Price: Rs.10,094</b><br/> 
+     <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi..</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="malhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Jen Male ,Maldives</b> </h4>
+        <p class="card-text"><b>Price: Rs.13,263</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="malhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Crystal Sands Beach Hotel</b> </h4>
+        <p class="card-text"><b>Price: Rs.8,577</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star  beachfront hotel with beach shuttle that provides facilities like outdoor pool,breakfast, health club , in-room childcare, 24-hr front desk near Maafushi Mosque.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="malhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Embudu Village, Emboodhoo Maldives</b> </h4>
+        <p class="card-text"><b>Price:Rs 14,963</b><br/>
+     <p><b>3 Star Hotel</b></p>
+     <p><em> A beachfront hotel that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi . .</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="Australia" class="tabcontent">
+  <h1>Top Hotels in Australia</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="ausha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Sailaway Beach House, Seaford, Australia </b> </h4>
+        <p class="card-text"><b>Price: Rs.9,939</b><br/> 
+     <p><b>4 Star Hotel</b></p>
+     <p><em>Seaford Bayfront guestrooms with outdoor pool, terrace, kitchen, breakfast, and free wifi.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="aushb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Woolrich Retreat</b> </h4>
+        <p class="card-text"><b>Price: Rs.12,423</b><br/>
+      <p><b>4.5 Star Hotel</b></p>
+     <p><em>A 4 star hotel with outdoor pool, terrace, upscale bed & breakfast, kitchen and free wifi. near Dandenong Ranges National Park.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="aushc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Sydney Darling Habour Waterfront, Sydney</b> </h4>
+        <p class="card-text"><b>Price: Rs.7,020</b><br/>
+      <p><b>4.5 Star Hotel</b></p>
+     <p><em>A luxury apartment  with kitchen ,breakfast and  health club  near Sydney Harbour Bridge.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="aushd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Rydges Sydney Central, Surry Hills, Australia</b> </h4>
+        <p class="card-text"><b>Price:Rs 10,129</b><br/>
+     <p><b>4.5 Star Hotel</b></p>
+     <p><em> A luxury hotel that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Capitol Theatre. .</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="Africa" class="tabcontent">
+  <h1>Top Hotels in Africa</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="afha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Taj, Cape Town </b> </h4>
+        <p class="card-text"><b>Price: Rs.7,024</b><br/> 
+     <p><b>5 Star Hotel</b></p>
+     <p><em>A 5 star luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Greenmaket Square.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="afhb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Park Inn By Radisson , Cape Town</b> </h4>
+        <p class="card-text"><b>Price: Rs.4,342</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Artscape Theatre Centre.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="afhc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Portswood V & A Waterfront, Cape Town </b> </h4>
+        <p class="card-text"><b>Price: Rs.8,160</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star hotel with beach shuttle that provides facilities like outdoor pool,breakfast, health club , in-room childcare, 24-hr front desk near Two Oceans Aquarium.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="afhd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Reef Hotel, Johannesburg</b> </h4>
+        <p class="card-text"><b>Price:Rs 3,872</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em> A 4 star hotel that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near africa museum. . .</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<div id="China" class="tabcontent">
+  <h1>Top Hotels in China</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="chiha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Peninsula Beijing, China</b> </h4>
+        <p class="card-text"><b>Price: Rs.17,061</b><br/> 
+     <p><b>5 Star Hotel</b></p>
+     <p><em>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Wangfiyung Street.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="chihb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Legendale Hotel, Beijing</b> </h4>
+        <p class="card-text"><b>Price: Rs.12,036</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Wangfiyung Street.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="chihc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Sunworld Dynasty Hotel</b> </h4>
+        <p class="card-text"><b>Price: Rs.7,318</b><br/>
+      <p><b>4.5 Star Hotel</b></p>
+     <p><em>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Wangfiyung Street.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="chihd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Great Wall Hotel ,Beijing </b> </h4>
+        <p class="card-text"><b>Price: Rs 6,342</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em> A luxury hotel in Chaoyang that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="Switzerland" class="tabcontent">
+  <h1>Top Hotels in Switzerland</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="switha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Four Points By Sheraton Sihlcity, Zurich</b> </h4>
+        <p class="card-text"><b>Price: Rs.15,326</b><br/> 
+     <p><b>4 Star Hotel</b></p>
+     <p><em>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Bahnofstrasse.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="swithb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Savoy Hotel Baur en Ville ,Zurich</b> </h4>
+        <p class="card-text"><b>Price: Rs.17,752</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Bahnofstrasse.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="swithc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Flemings Hotel ,Zurich</b> </h4>
+        <p class="card-text"><b>Price: Rs.10,132</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Bahnofstrasse.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="swithd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Schweizerchof,Zurich </b> </h4>
+        <p class="card-text"><b>Price: Rs 15,799</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em> A luxury hotel  that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Swiss National Museum..</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="Thailand" class="tabcontent">
+  <h1>Top Hotels in Thailand </h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="thaiha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Muse Bangkok Langsuan</b> </h4>
+        <p class="card-text"><b>Price: Rs.9,276</b><br/> 
+     <p><b>5 Star Hotel</b></p>
+     <p><em>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Siam Paragon Mall.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="thaihb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Akara Hotel,Bangkok</b> </h4>
+        <p class="card-text"><b>Price: Rs.5,997</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near King Power Downtown Complex.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="thaihc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Movenpick Resort Bangtao Beach Phuket</b> </h4>
+        <p class="card-text"><b>Price: Rs.10,884</b><br/>
+      <p><b>4.5 Star Hotel</b></p>
+     <p><em>A  beach aparthotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="thaihd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Acqua Hotel, Pattaya </b> </h4>
+        <p class="card-text"><b>Price: Rs 3,101</b><br/>
+     <p><b>4 Star Hotel</b></p>
+     <p><em> A luxury hotel in central paattya that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi .</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="Prague" class="tabcontent">
+  <h1>Top Hotels in Prague </h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="praha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Prague Mariott Hotel</b> </h4>
+        <p class="card-text"><b>Price: Rs.11,090</b><br/> 
+     <p><b>5 Star Hotel</b></p>
+     <p><em>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near old town square.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="prahb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Smetana Hotel,Prague</b> </h4>
+        <p class="card-text"><b>Price: Rs.13,077</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near old town square.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="prahc.jpg"alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Emblem Hotel,Prague</b> </h4>
+        <p class="card-text"><b>Price: Rs.10,884</b><br/>
+      <p><b>5 Star Hotel</b></p>
+     <p><em>>A  luxury hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near old town square.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="prahd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Grandior Hotel Prague </b> </h4>
+        <p class="card-text"><b>Price: Rs 10,443</b><br/>
+     <p><b>5 Star Hotel</b></p>
+     <p><em> A luxury hotel near Palladium  shopping centre that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi .</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="Spain" class="tabcontent">
+  <h1>Top Hotels in Spain</h1>
+  <div class="card-deck">
+  <div class="card bg-none">
+    <img class="card-img-top" src="spaha.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Atlantico Madrid</b> </h4>
+        <p class="card-text"><b>Price: Rs.8,720</b><br/> 
+     <p><b>4 Star Hotel</b></p>
+     <p><em>A 4 star  hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Plaza Mayor.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+    <img class="card-img-top" src="spahb.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>The Pavillions Madrid Hotel </b> </h4>
+        <p class="card-text"><b>Price: Rs.14,147</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A  4 star  hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Prado Museum.</em></p>
+      </div>
+    </div>
+      
+    <div class="card bg-none">
+       <img class="card-img-top" src="spahc.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Hotel Barcelona Princess</b> </h4>
+        <p class="card-text"><b>Price: Rs.10,588</b><br/>
+      <p><b>4 Star Hotel</b></p>
+     <p><em>A  4 star hotel with outdoor pool, terrace, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Bella Beach.</em></p>
+      </div>
+    </div>
+    <div class="card bg-none">
+     <img class="card-img-top" src="spahd.jpg" alt="Card image" style="width:100%">
+      <div class="card-body text-left">
+      <h4 class="card-title"><b>Leonardo Hotel Barcelona, Las Ramblas, Barcelona </b> </h4>
+        <p class="card-text"><b>Price: Rs 11,412</b><br/>
+     <p><b>3 Star Hotel</b></p>
+     <p><em> A 3 star hotel  that  provides facilities like outdoor pool, breakfast, health club , in-room childcare, 24-hr front desk and free wifi near Las Ramblas .</em></p>
+      </div>
+    </div>
+    </div>
+</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
